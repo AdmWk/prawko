@@ -1,4 +1,4 @@
-package pl.admwk.prawo_jazdy.model;
+package pl.admwk.prawko.model;
 
 import java.util.Map;
 

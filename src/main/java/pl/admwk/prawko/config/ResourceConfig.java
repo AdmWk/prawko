@@ -1,4 +1,4 @@
-package pl.admwk.prawo_jazdy.config;
+package pl.admwk.prawko.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

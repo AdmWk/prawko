@@ -1,26 +1,24 @@
-package pl.admwk.prawo_jazdy;
+package pl.admwk.prawko;
 
-import org.apache.commons.io.FilenameUtils;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import pl.admwk.prawo_jazdy.model.Question;
-import ws.schild.jave.*;
+import pl.admwk.prawko.model.Question;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
 @SpringBootApplication
-public class PrawoJazdyApplication {
+public class PrawkoApplication {
 	public static final List<Question> questions = new ArrayList<>();
 
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(PrawoJazdyApplication.class, args);
-		File file = new File("D:\\Spring apps\\prawo_jazdy\\src\\main\\resources\\data\\baza_test.xlsx");
+		SpringApplication.run(PrawkoApplication.class, args);
+		File file = new File("src/main/resources/data/baza_test.xlsx");
 		Workbook workbook = WorkbookFactory.create(file);
 		Sheet sheet = workbook.getSheetAt(0);
 		Iterator<Row> rowIterator = sheet.rowIterator();
